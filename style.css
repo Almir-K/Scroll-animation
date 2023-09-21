@@ -1,0 +1,48 @@
+@import url("http://fonts.googleleapis.com/css?family=Ubuntu");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg, #52ac69, #8cd1c8);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 10px;
+  margin-top: 50px;
+}
+
+.box {
+  background-color: #5ba16d;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgb(104, 103, 103);
+  transform: translateX(500%);
+  transition: transform 0.64s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translate(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 45px;
+}
